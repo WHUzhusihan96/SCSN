@@ -50,7 +50,7 @@ It is easy to design your own method following the steps:
 
 Here we provide two results, more can be found in our paper.
 
-### Results (%) of cross-scene generalization tasks (ResNet-18)
+### Results of cross-scene generalization tasks (ResNet-18)
 |  Method  |    A   |    C   |    M   |    R   |   avg  |
 |:--------:|:------:|:------:|:------:|:------:|:------:|
 |    ERM   | 93.16  | 83.88  | 75.54  | 72.61  | 81.30  |
@@ -71,6 +71,8 @@ Here we provide two results, more can be found in our paper.
 |   SCSN   | 95.80  | 86.17  | 77.66  | 75.29  | 83.73  |
 |   SCSN_bt   | 95.68  | 86.26  | 77.40  | 75.82  | 83.79  |
 
+[IMP](https://ieeexplore.ieee.org/abstract/document/5206848) and [RSP](https://ieeexplore.ieee.org/document/9782149) denote ImageNet pre-training and Remote Sensing pre-training.
+
 ### Results of IMP and RSP pre-trained model (ResNet-50)
 |  Method  |    A   |    C   |    M   |    R   |   avg  |
 |:--------:|:------:|:------:|:------:|:------:|:------:|
@@ -81,7 +83,7 @@ Here we provide two results, more can be found in our paper.
 
 ## Acknowledgment
 
-Great thanks to [DomainBed](https://github.com/facebookresearch/DomainBed) and [DeepDG](https://github.com/jindongwang/transferlearning/tree/master/code/DeepDG. And our code is mainly based on DeepDG.
+Great thanks to [DomainBed](https://github.com/facebookresearch/DomainBed) and [DeepDG](https://github.com/jindongwang/transferlearning/tree/master/code/DeepDG). And our code is mainly based on DeepDG.
 
 ## Reference
 ```
