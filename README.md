@@ -1,20 +1,21 @@
 ## SCSN
-A cross-scene generalization method for remote sensing scene classification
 
-This repo is based on [this repo](https://github.com/jindongwang/transferlearning/tree/master/code/DeepDG). More details can be found in it
-
-Code will be updated soon
+A cross-scene generalization method for remote sensing image scene classification.
 
 ## Requirement
+
 * python 3
 * pytorch 1.10 or above
 
 ## Datasets
-Four scene classification datasets: `AID, CLRS, MLRSN, and RSSCN7`
 
-The specific data in our experiments is recorded in the ./data
+Four scene classification datasets are used in our experiments: `AID, CLRS, MLRSN, and RSSCN7`. Since they are all public benchmarks, they will not be provided here. Just get them by yoursef.
 
-If you want to use your own dataset, please organize your data in the following structure
+For more information on the scene classification (or more tasks) dataset, check out this [paper](https://ieeexplore.ieee.org/document/9393553).
+
+./data/xxx.txt is to show samples in our experiment. This is not the way our code reads data.
+
+If you want to use your own dataset, please organize your data in the following structure.
 
 ```
 RootDir
@@ -27,25 +28,29 @@ RootDir
 └───Domain2Name
 |   ...    
 ```
-And then, modifty `util/util.py` to contain the dataset
+And then, modifty `util/util.py` to contain the dataset.
 
 ## Usage
 
-1. Modify the file in the scripts
+1. Modify the file in the scripts.
 
-2. The main script file is `train.py`, and you can follow `run_helper.txt` to train or infer the model
+2. The main script file is `train.py`, and you can follow `run_helper.txt` to train or infer the model.
 
 ## Customization
 
 It is easy to design your own method following the steps:
 
-1. Add your method (a Python file) to `alg/algs`, and add the reference to it in the `alg/alg.py`
+1. Add your method (a Python file) to `alg/algs`, and add the reference to it in the `alg/alg.py`.
 
-2. Modify `utils/util.py` to make it adapt your own parameters
+2. Modify `utils/util.py` to make it adapt your own parameters.
 
-3. Modify `scripts/run.sh` and execuate it
+3. Modify `scripts/run.sh` and execuate it.
 
 ## Results
+
+Here we provide two results, more can be found in our paper.
+
+### Results (%) of cross-scene generalization tasks (ResNet-18)
 |  Method  |    A   |    C   |    M   |    R   |   avg  |
 |:--------:|:------:|:------:|:------:|:------:|:------:|
 |    ERM   | 93.16  | 83.88  | 75.54  | 72.61  | 81.30  |
@@ -66,9 +71,19 @@ It is easy to design your own method following the steps:
 |   SCSN   | 95.80  | 86.17  | 77.66  | 75.29  | 83.73  |
 |   SCSN_bt   | 95.68  | 86.26  | 77.40  | 75.82  | 83.79  |
 
-> 
-## Reference
+### Results of IMP and RSP pre-trained model (ResNet-50)
+|  Method  |    A   |    C   |    M   |    R   |   avg  |
+|:--------:|:------:|:------:|:------:|:------:|:------:|
+|  ERM-IMP | 93.28  | 84.67  | 76.51  | 75.50  | 82.49  |
+| SCSN-IMP | 95.84  | 86.95  | 77.32  | 75.64  | 83.94  |
+|  ERM-RSP | 95.04  | 86.36  | 78.61  | 76.86  | 84.22  |
+| SCSN-RSP | 96.24  | 87.55  | 79.18  | 77.54  | 85.13  |
 
+## Acknowledgment
+
+Great thanks to [DomainBed](https://github.com/facebookresearch/DomainBed) and [DeepDG](https://github.com/jindongwang/transferlearning/tree/master/code/DeepDG. And our code is mainly based on DeepDG.
+
+## Reference
 ```
 Wait for publication.
 ```
