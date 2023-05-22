@@ -28,7 +28,10 @@ RootDir
 └───Domain2Name
 |   ...    
 ```
+
 And then, modifty `util/util.py` to contain the dataset.
+
+The specific image suffixes supported can be referred to torchvision.datasets.ImageFolder.
 
 ## Usage
 
