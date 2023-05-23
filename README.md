@@ -37,11 +37,13 @@ The specific image suffixes supported can be referred to torchvision.datasets.Im
 
 1. Modify the file in the scripts.
 
-2. The main script file is `train.py`, and you can follow `run_helper.txt` to train or infer the model.
+2. The main script file is `train.py`, which can be runned by using run.sh from scripts/run.sh.
 
 ## Customization
 
+```
 It is easy to design your own method following the steps:
+```
 
 1. Add your method (a Python file) to `alg/algs`, and add the reference to it in the `alg/alg.py`.
 
