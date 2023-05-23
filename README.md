@@ -1,6 +1,6 @@
 ## SCSN
 
-A cross-scene generalization method for remote sensing image scene classification.
+A deep learning method for remote sensing image cross-scene generalization.
 
 ## Requirement
 
@@ -89,12 +89,17 @@ Here we provide two results, more can be found in our paper.
 Great thanks to [DomainBed](https://github.com/facebookresearch/DomainBed) and [DeepDG](https://github.com/jindongwang/transferlearning/tree/master/code/DeepDG). And our code is mainly based on DeepDG.
 
 ## Reference
-```
-Wait for publication.
-```
-
-or in bibtex style:
 
 ```
-Wait for publication.
+@article{ZHU20231,
+title = {Style and content separation network for remote sensing image cross-scene generalization},
+journal = {ISPRS Journal of Photogrammetry and Remote Sensing},
+volume = {201},
+pages = {1-11},
+year = {2023},
+issn = {0924-2716},
+doi = {https://doi.org/10.1016/j.isprsjprs.2023.05.007},
+url = {https://www.sciencedirect.com/science/article/pii/S0924271623001247},
+author = {Sihan Zhu and Chen Wu and Bo Du and Liangpei Zhang}
+}
 ```
