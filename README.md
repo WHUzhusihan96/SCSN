@@ -41,9 +41,7 @@ The specific image suffixes supported can be referred to torchvision.datasets.Im
 
 ## Customization
 
-```
-It is easy to design your own method following the steps:
-```
+**It is easy to design your own method following the steps:**
 
 1. Add your method (a Python file) to `alg/algs`, and add the reference to it in the `alg/alg.py`.
 
